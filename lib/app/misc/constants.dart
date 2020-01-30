@@ -21,34 +21,22 @@ class AppConstants {
   static const Color COLOR_RED = Color.fromRGBO(255, 0, 0, 1.0);
 
   // user data
-  static const String USER_DATA_ID = "id";
   static const String USER_DATA_NAME = "name";
-  static const String USER_DATA_SALES_CODE = "sales_code";
-  static const String USER_DATA_PHONE = "phone";
-  static const String USER_DATA_EMAIL = "email";
+  static const String USER_DATA_EMPLOYEE_NUMBER = "id";
   static const String USER_DATA_POSITION = "position";
-  static const String USER_DATA_LOCATION = "location";
-  static const String USER_DATA_PHOTO = "photo";
-  static const String USER_DATA_CURRENT_GRADE = "current_grade";
+  static const String USER_DATA_GRADE = "grade";
+  static const String USER_DATA_EMAIL = "email";
+  static const String USER_DATA_MOBILE_PHONE = "mobile_phone";
+  static const String USER_DATA_JOIN_DATE = "join_date";
+  static const String USER_DATA_EMPLOYEE_STATUS = "employment_status";
+  static const String USER_DATA_PROFILE_PHOTO = "profile_photo";
   static const String USER_DATA_PREV_GRADE = "prev_grade";
-  static const String USER_DATA_TEAM_CATEGORY = "team_category";
-  static const String USER_DATA_ENTRY_DATE = "entry_date";
-  static const String USER_DATA_SUPERVISOR = "supervisor";
-  static const String USER_DATA_DEALER_CITY = "dealer_city";
-  static const String USER_DATA_DEALER_BRANCH = "dealer_branch";
-  static const String USER_DATA_DEALER_GROUP = "dealer_group";
+  static const String USER_DATA_KTP = "ktp";
+  static const String USER_DATA_NPWP = "npwp";
   static const String USER_DATA_TOKEN = "token";
   static const String USER_DATA_EXPIRES_AT = "expires_at";
-  static const String USER_DATA_HAS_NOTIFICATIONS = "has_notifications";
-  static const String USER_DATA_ENABLE_NOTIFICATION = "enable_notification";
   static const String USER_DATA_IS_FIRST_TIME = "is_first_time";
   static const String USER_DATA_LOGOUT_REASON = "logout_reason";
-  static const String USER_DATA_LAST_USER = "last_user";
   static const String USER_DATA_IS_REGISTERED = "is_registered";
   static const String USER_DATA_APP_INFO = "app_info";
-
-  // notifications
-  static const String NOTIFICATION_CHANNEL_ID = "sfid_mobile_announcement";
-  static const String NOTIFICATION_CHANNEL_NAME = "SFID Mobile";
-  static const String NOTIFICATION_CHANNEL_DESCRIPTION = "SFID Mobile Notification Channel";
 }

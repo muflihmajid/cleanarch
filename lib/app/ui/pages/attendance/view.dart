@@ -33,7 +33,7 @@ class _AttendancePageState extends ViewState<AttendancePage, AttendanceControlle
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildPage() {
     return new Scaffold(
         key: globalKey,
         body: RtoWidget(

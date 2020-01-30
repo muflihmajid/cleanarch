@@ -41,7 +41,7 @@ class _MainPageState extends ViewState<MainPage, MainController>
   }
 
   @override
-Widget build(BuildContext context) {
+Widget buildPage() {
     return new Scaffold(
       key: globalKey,
       body: pages[controller.tabIndex],

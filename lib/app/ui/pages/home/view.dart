@@ -32,7 +32,7 @@ class _HomePageState extends ViewState<HomePage, HomeController>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildPage() {
     return new Scaffold(
         key: globalKey,
         body: RtoWidget(

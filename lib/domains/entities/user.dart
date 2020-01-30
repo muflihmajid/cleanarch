@@ -1,15 +1,40 @@
 class User {
-  int id;
-  Profile profile;
+  Data data;
+  Auth auth;
 
-  User({this.id, this.profile});
+  User({this.data, this.auth});
 }
 
-class Profile {
-  String idnumber;
-  String name;
-  String email;
-  int phone;
+class Auth {
+  String accessToken;
+  int expiresAt;
 
-  Profile({this.idnumber, this.name, this.email, this.phone});
+  Auth({this.accessToken, this.expiresAt});
+}
+
+class Data {
+  String name;
+  String employeenumber;
+  String position;
+  String grade;
+  String email;
+  String mobilephone;
+  String joindate;
+  String employmentstatus;
+  String profilephoto;
+  String ktp;
+  String npwp;
+
+  Data(
+      {this.name,
+      this.employeenumber,
+      this.position,
+      this.grade,
+      this.email,
+      this.mobilephone,
+      this.joindate,
+      this.employmentstatus,
+      this.profilephoto,
+      this.ktp,
+      this.npwp});
 }

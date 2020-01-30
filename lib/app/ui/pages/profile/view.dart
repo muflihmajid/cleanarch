@@ -33,13 +33,9 @@ class _ProfilePageState extends ViewState<ProfilePage, ProfileController>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildPage() {
     return new Scaffold(
         key: globalKey,
-        body: RtoWidget(
-          onPressed: () {
-            controller.checkInternetConnection();
-          },
-        ));
+        body: Text("Cek bisa gak ${controller.userdata.data.email}"));
   }
 }

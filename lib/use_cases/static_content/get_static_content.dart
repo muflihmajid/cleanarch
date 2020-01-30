@@ -13,7 +13,7 @@ class GetStaticContentUseCase extends UseCase<StaticContent, String> {
   GetStaticContentUseCase(this._repository);
 
   @override
-  Future<RxDart.Observable<StaticContent>> buildUseCaseObservable(String name) async {
+  Future<Stream<StaticContent>> buildUseCaseStream(String name) async {
     final StreamController<StaticContent> _controller = StreamController();    
     try {
       StaticContent content = await _repository.show(name);
@@ -23,6 +23,6 @@ class GetStaticContentUseCase extends UseCase<StaticContent, String> {
       print(e);
       _controller.addError(e);
     }
-    return RxDart.Observable(_controller.stream);
+    return _controller.stream;
   }
 }

@@ -1,4 +1,4 @@
-# SFID Mobile
+# Attendance Mobile
 
 A new Flutter project.
 
@@ -16,7 +16,7 @@ BASE_URL=https://private-5aea5-sfdbsi.apiary-mock.com/api/v1
 
 #### Requirements
 
-  - Flutter version: *1.9.1+hotfix.4*
+  - Flutter version: *v1.12.13+hotfix.5*
   - Don't forget to run `flutter pub get`
 
 ### Convetions and MUST DOs

@@ -6,7 +6,7 @@ class Endpoints {
   }
 
   String user() {
-    return '/user/me';
+    return '/employee';
   }
 
   String verifyByPassword() {

@@ -19,7 +19,7 @@ class _SplashPageState extends ViewState<SplashPage, SplashController> {
   @override
   void initState() {
     splashImage = Image.asset(
-      'lib/app/ui/assets/images/logo2.png',
+      'lib/app/ui/assets/images/logo.png',
       width: 400,
       height: 400,
     );
@@ -33,7 +33,7 @@ class _SplashPageState extends ViewState<SplashPage, SplashController> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildPage() {
     return Scaffold(
       key: globalKey,
       body: Center(
