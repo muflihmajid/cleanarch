@@ -9,8 +9,8 @@ class Endpoints {
     return '/employee';
   }
 
-  String verifyByPassword() {
-    return '/setting/verify';
+  String login() {
+    return '/login';
   }
 
 }
