@@ -4,5 +4,8 @@
     "profile_title":"Profile",
     "home_bar":"Home",
     "attendance_bar":"Attendance",
-    "profile_bar":"Profile"
+    "profile_bar":"Profile",
+    "input_placeholder_employee":"Employee ID",
+    "input_placeholder_password":"Password",
+    "label_enter":"Login"
 }

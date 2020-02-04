@@ -39,4 +39,5 @@ class AppConstants {
   static const String USER_DATA_LOGOUT_REASON = "logout_reason";
   static const String USER_DATA_IS_REGISTERED = "is_registered";
   static const String USER_DATA_APP_INFO = "app_info";
+  static const String USER_DATA_PASSWORD = "password";
 }

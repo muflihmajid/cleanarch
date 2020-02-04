@@ -19,6 +19,9 @@ class $id extends MessageLookupByLibrary {
 		"home_bar" : MessageLookupByLibrary.simpleMessage("Home"),
 		"attendance_bar" : MessageLookupByLibrary.simpleMessage("Attendance"),
 		"profile_bar" : MessageLookupByLibrary.simpleMessage("Profile"),
+		"input_placeholder_employee" : MessageLookupByLibrary.simpleMessage("Employee ID"),
+		"input_placeholder_password" : MessageLookupByLibrary.simpleMessage("Password"),
+		"label_enter" : MessageLookupByLibrary.simpleMessage("Login"),
 
   };
 }

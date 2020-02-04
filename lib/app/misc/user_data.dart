@@ -22,9 +22,16 @@ class UserData {
 
   // misc
   bool isRegistered;
+  String password;
+  
 
   UserData() {
     this._loadData();
+  }
+
+  void fromAuth(Auth auth) {
+    this.expiresAt = auth.expiresAt;
+    this.token = auth.accessToken;
   }
 
   void fromUser(User user) {
@@ -59,6 +66,7 @@ class UserData {
           sp.getString(AppConstants.USER_DATA_PROFILE_PHOTO) ?? "";
       this.ktp = sp.getInt(AppConstants.USER_DATA_KTP) ?? "";
       this.npwp = sp.getString(AppConstants.USER_DATA_NPWP) ?? "";
+      this.password = sp.getString(AppConstants.USER_DATA_PASSWORD) ?? "";
     });
   }
 
@@ -90,6 +98,7 @@ class UserData {
     this.profilephoto = null;
     this.ktp = null;
     this.npwp = null;
+    this.password = null;
   }
 
   Future<void> save() {
@@ -101,10 +110,12 @@ class UserData {
       sp.setString(AppConstants.USER_DATA_EMAIL, this.email);
       sp.setString(AppConstants.USER_DATA_MOBILE_PHONE, this.mobilephone);
       sp.setString(AppConstants.USER_DATA_JOIN_DATE, this.joindate);
-      sp.setString(AppConstants.USER_DATA_EMPLOYEE_STATUS, this.employmentstatus);
+      sp.setString(
+          AppConstants.USER_DATA_EMPLOYEE_STATUS, this.employmentstatus);
       sp.setString(AppConstants.USER_DATA_PROFILE_PHOTO, this.profilephoto);
       sp.setString(AppConstants.USER_DATA_KTP, this.ktp);
       sp.setString(AppConstants.USER_DATA_NPWP, this.npwp);
+       sp.setString(AppConstants.USER_DATA_PASSWORD, this.password);
     });
   }
 

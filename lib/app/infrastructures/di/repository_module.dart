@@ -1,6 +1,8 @@
 import 'package:attendance_mobile/app/infrastructures/endpoints.dart';
 import 'package:attendance_mobile/app/infrastructures/persistences/api_service.dart';
+import 'package:attendance_mobile/app/repositories/api/auth_api_repository.dart';
 import 'package:attendance_mobile/app/repositories/api/user_api_repository.dart';
+import 'package:attendance_mobile/data/persistences/mappers/auth_mapper.dart';
 import 'package:attendance_mobile/data/persistences/mappers/user_mapper.dart';
 import 'package:injector/injector.dart';
 class RepositoryModule {
@@ -11,6 +13,14 @@ class RepositoryModule {
         injector.getDependency<ApiService>(),
         injector.getDependency<Endpoints>(),
         injector.getDependency<UserMapper>()
+      );
+    });
+    
+    injector.registerDependency<AuthApiRepository>( (Injector injector) {
+      return AuthApiRepository(
+        injector.getDependency<ApiService>(),
+        injector.getDependency<Endpoints>(),
+        injector.getDependency<AuthMapper>()
       );
     });
   }

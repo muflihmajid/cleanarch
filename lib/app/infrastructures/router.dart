@@ -1,3 +1,4 @@
+import 'package:attendance_mobile/app/ui/pages/login/view.dart';
 import 'package:attendance_mobile/app/ui/pages/main/view.dart';
 import 'package:attendance_mobile/app/ui/pages/pages.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,6 +15,8 @@ class Router {
     switch (settings.name) {
       case Pages.main:
         return _buildRoute(settings, new MainPage());
+      case Pages.login:
+        return _buildRoute(settings, new LoginPage());
       default:
         return null;
     }

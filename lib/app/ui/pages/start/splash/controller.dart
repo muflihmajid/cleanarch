@@ -32,7 +32,7 @@ class SplashController extends BaseController {
     if (_statusCamera != PermissionStatus.granted &&
         _statusLocation != PermissionStatus.granted) {
       _requestPermissions().whenComplete(() {
-        Navigator.pushReplacementNamed(getContext(), Pages.main);
+        Navigator.pushReplacementNamed(getContext(), Pages.login);
         _navigate();
       });
     }
@@ -41,7 +41,7 @@ class SplashController extends BaseController {
   _navigate() {
     var _duration = new Duration(seconds: 1);
     return new Timer(_duration, () {
-      return Navigator.pushReplacementNamed(getContext(), Pages.main);
+      return Navigator.pushReplacementNamed(getContext(), Pages.login);
     });
   }
 

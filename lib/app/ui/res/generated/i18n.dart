@@ -50,6 +50,18 @@ class S {
     return Intl.message("Profile", name: 'profile_bar');
   }
 
+  String get input_placeholder_employee {
+    return Intl.message("Employee ID", name: 'input_placeholder_employee');
+  }
+
+  String get input_placeholder_password {
+    return Intl.message("Password", name: 'input_placeholder_password');
+  }
+
+  String get label_enter {
+    return Intl.message("Login", name: 'label_enter');
+  }
+
 
 }
 
