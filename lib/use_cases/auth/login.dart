@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:attendance_mobile/data/payload/contracts/auth_request.dart';
+import 'package:attendance_mobile/data/persistences/repositories/auth_repository.dart';
 import 'package:attendance_mobile/domains/entities/user.dart';
-import 'package:attendance_mobile/domains/repositories/auth_repository.dart';
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 
 class LoginUseCase extends UseCase<Auth, LoginRequestInterface> {

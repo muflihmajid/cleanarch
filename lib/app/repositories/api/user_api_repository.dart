@@ -1,8 +1,8 @@
 import 'package:attendance_mobile/app/infrastructures/endpoints.dart';
 import 'package:attendance_mobile/data/infrastructures/api_service_interface.dart';
 import 'package:attendance_mobile/data/persistences/mappers/user_mapper.dart';
+import 'package:attendance_mobile/data/persistences/repositories/user_repositories.dart';
 import 'package:attendance_mobile/domains/entities/user.dart';
-import 'package:attendance_mobile/domains/repositories/user_repositories.dart';
 import 'dart:developer' as developer;
 
 class UserApiRepository extends UserRepository {

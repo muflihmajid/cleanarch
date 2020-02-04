@@ -5,8 +5,8 @@ import 'package:attendance_mobile/data/infrastructures/api_service_interface.dar
 import 'package:attendance_mobile/data/payload/api/login_api_payload.dart';
 import 'package:attendance_mobile/data/payload/contracts/auth_request.dart';
 import 'package:attendance_mobile/data/persistences/mappers/auth_mapper.dart';
+import 'package:attendance_mobile/data/persistences/repositories/auth_repository.dart';
 import 'package:attendance_mobile/domains/entities/user.dart';
-import 'package:attendance_mobile/domains/repositories/auth_repository.dart';
 
 class AuthApiRepository extends AuthRepository {
   ApiServiceInterface _service;

@@ -1,7 +1,7 @@
 import 'dart:async';
 
+import 'package:attendance_mobile/data/persistences/repositories/user_repositories.dart';
 import 'package:attendance_mobile/domains/entities/user.dart';
-import 'package:attendance_mobile/domains/repositories/user_repositories.dart';
 import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 import 'package:rxdart/rxdart.dart';
 
