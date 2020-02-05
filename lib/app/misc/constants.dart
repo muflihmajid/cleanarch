@@ -34,7 +34,7 @@ class AppConstants {
   static const String USER_DATA_KTP = "ktp";
   static const String USER_DATA_NPWP = "npwp";
   static const String USER_DATA_TOKEN = "token";
-  static const String USER_DATA_EXPIRES_AT = "expires_at";
+  static const String USER_DATA_EXPIRES_AT = "expire_date";
   static const String USER_DATA_IS_FIRST_TIME = "is_first_time";
   static const String USER_DATA_LOGOUT_REASON = "logout_reason";
   static const String USER_DATA_IS_REGISTERED = "is_registered";
