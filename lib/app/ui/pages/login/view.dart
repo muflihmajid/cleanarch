@@ -89,8 +89,9 @@ class _LoginPageState extends ViewState<LoginPage, LoginController>
                 minWidth: MediaQuery.of(context).size.width,
                 height: 48,
                 isDisabled: false,
-                buttonText: 
-                    S.of(context).label_enter.toUpperCase(),
+                buttonText: controller.isLoading
+                    ? CommonLoading()
+                    : S.of(context).label_enter.toUpperCase(),
                 onPressed: () {
                   _onLoginButtonPressed();
                 },

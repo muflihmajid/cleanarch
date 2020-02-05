@@ -2,7 +2,7 @@
 
 import 'package:attendance_mobile/app/infrastructures/endpoints.dart';
 import 'package:attendance_mobile/data/infrastructures/api_service_interface.dart';
-import 'package:attendance_mobile/data/payload/api/login_api_payload.dart';
+import 'package:attendance_mobile/data/payload/api/auth/login_api_payload.dart';
 import 'package:attendance_mobile/data/payload/contracts/auth_request.dart';
 import 'package:attendance_mobile/data/persistences/mappers/auth_mapper.dart';
 import 'package:attendance_mobile/data/persistences/repositories/auth_repository.dart';

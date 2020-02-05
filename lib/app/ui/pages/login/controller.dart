@@ -2,7 +2,7 @@ import 'package:attendance_mobile/app/infrastructures/contracts/base_controller.
 import 'package:attendance_mobile/app/misc/user_data.dart';
 import 'package:attendance_mobile/app/ui/pages/login/presenter.dart';
 import 'package:attendance_mobile/app/ui/pages/pages.dart';
-import 'package:attendance_mobile/data/payload/api/login_api_payload.dart';
+import 'package:attendance_mobile/data/payload/api/auth/login_api_payload.dart';
 import 'package:attendance_mobile/domains/entities/user.dart';
 import 'package:flutter/widgets.dart';
 
