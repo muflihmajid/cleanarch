@@ -99,6 +99,8 @@ class UserData {
     this.ktp = null;
     this.npwp = null;
     this.password = null;
+    this.token = null;
+    this.expiresAt=null;
   }
 
   Future<void> save() {
@@ -116,6 +118,7 @@ class UserData {
       sp.setString(AppConstants.USER_DATA_KTP, this.ktp);
       sp.setString(AppConstants.USER_DATA_NPWP, this.npwp);
        sp.setString(AppConstants.USER_DATA_PASSWORD, this.password);
+       sp.setInt(AppConstants.USER_DATA_EXPIRES_AT, this.expiresAt);
     });
   }
 

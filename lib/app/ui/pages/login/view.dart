@@ -74,12 +74,9 @@ class _LoginPageState extends ViewState<LoginPage, LoginController>
                 isError: false,
                 controller: controller.passwordInput,
                 placeholder: S.of(context).input_placeholder_password,
-                prefixIcon: IconButton(
-                  onPressed: () {},
-                  icon: ImageIcon(
-                    AssetImage('lib/app/ui/assets/icons/vpn_key_icon.png'),
-                    size: 20,
-                  ),
+                prefixIcon: Icon(
+                  Icons.vpn_key,
+                  size: 30,
                 ),
               ),
               padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -99,6 +96,7 @@ class _LoginPageState extends ViewState<LoginPage, LoginController>
               padding: EdgeInsets.fromLTRB(
                   20, MediaQuery.of(context).size.height * 0.06, 20, 0),
             ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.2),
           ],
         ),
       ),

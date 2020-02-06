@@ -68,9 +68,3 @@ class CommonButton extends StatelessWidget {
     );
   }
 }
-
-/// HATI-HATI KETIKA MENGEDIT REUSABLE WIDGET/COMPONENT
-/// Pastikan tidak merusak tampilan yang lainnya
-/// Karena REUSABLE WIDGET/COMPONENT memiliki arti widget/component ini dipakai di berbagai screen/layar
-/// =====================================================
-///

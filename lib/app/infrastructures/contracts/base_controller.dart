@@ -10,9 +10,7 @@ import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
 class BaseController extends Controller {
   EventBus _eventBus = AppComponent.getInjector().getDependency<EventBus>();
   bool _internetAvailable = true;
-  bool _isMounted = true;
-  Function _refresh;
-  bool isLoading;
+  bool isLoading = false;
 
   bool get internetAvailable => _internetAvailable;
 
@@ -80,21 +78,11 @@ class BaseController extends Controller {
   }
 
   void dismissLoading() {
-    assert(_refresh != null,
-        '''The `refresh callback is somehow null. This might be because `dismissLoading()` was called
-     before the `View` called `controller.initController()`.
-     Please open an issue at `https://github.com/ShadyBoukhary/flutter_clean_architecture` describing 
-     the error.''');
-    if (_isMounted) _refresh(() => isLoading = false);
+    isLoading = false;
   }
 
   void showLoading() {
-    assert(_refresh != null,
-        '''The `_refresh callback is somehow null. This might be because `showLoading()` was called
-     before the `View` called `controller.initController()`.
-     Please open an issue at `https://github.com/ShadyBoukhary/flutter_clean_architecture` describing 
-     the error.''');
-    _refresh(() => isLoading = true);
+    isLoading = true;
   }
   
 }

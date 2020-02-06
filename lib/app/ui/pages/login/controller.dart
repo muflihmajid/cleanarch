@@ -10,6 +10,7 @@ class LoginController extends BaseController {
   LoginPresenter _presenter;
   Auth _auth;
   UserData _userData;
+  bool loading = false;
 
   bool _isErrorEmployeeCode = false, _isObscured = true;
 
@@ -30,6 +31,7 @@ class LoginController extends BaseController {
   }
 
   void login() {
+    showLoading();
     refreshUI();
     _presenter.onLogin(LoginApiRequest(
         userID: _employeeInput.text,
@@ -55,7 +57,8 @@ class LoginController extends BaseController {
       _userData.fromAuth(_auth);
       _userData.password = _passwordInput.text;
       await _userData.save();
-      print("hasil ngegate${_auth.expiresAt}");
+      print("hasil ngegate${_auth.accessToken}");
+      dismissLoading();
       Navigator.pushReplacementNamed(getContext(), Pages.main);
     };
 
